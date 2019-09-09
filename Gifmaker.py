@@ -2,7 +2,7 @@ import imageio
 import os 
 
 
-clip = os.path.abspath("Boxing.mp4")
+file = os.path.abspath("Boxing.mp4")
 
 def gifMaker(inputPath , targetFormat):
     outputPath = os.path.splitext(inputPath)[0] + targetFormat
@@ -16,4 +16,4 @@ def gifMaker(inputPath , targetFormat):
     print("Done")
     writer.close()
 
-gifMaker(clip , ".gif")
+gifMaker(filw , ".gif")
